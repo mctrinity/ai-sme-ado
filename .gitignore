@@ -1,0 +1,37 @@
+# General
+.DS_Store
+node_modules/
+venv/
+.env
+*.log
+*.pyc
+__pycache__/
+
+# Backend (Python)
+backend/__pycache__/
+backend/.env
+backend/.pytest_cache/
+backend/db.sqlite3
+backend/migrations/
+
+# Frontend (Node.js / React)
+frontend/node_modules/
+frontend/.env
+frontend/.next/
+frontend/.cache/
+frontend/dist/
+frontend/build/
+
+# VS Code
+.vscode/
+
+# Logs and Debug
+logs/
+debug.log
+npm-debug.log
+
+# Azure and Deployment
+terraform.tfstate
+terraform.tfstate.backup
+azure-pipelines.yml
+.idea/

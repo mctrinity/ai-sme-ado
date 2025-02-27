@@ -69,6 +69,63 @@ DATABASE_URL=your_database_url
 - Deploy frontend on **Azure Static Web Apps**
 - Set up **CI/CD Pipelines** for automatic deployments
 
+## Folder Structure
+```plaintext
+ai-sme-ado/
+│   README.md
+│   .gitignore
+│   azure-pipelines.yml  # CI/CD Pipeline Configuration
+│   
+├── backend/
+│   ├── app/
+│   │   ├── main.py  # API entry point
+│   │   ├── routes/
+│   │   │   ├── chatbot.py  # AI SME chatbot endpoints
+│   │   │   ├── devops.py  # Azure DevOps API integrations
+│   │   │   ├── analytics.py  # Predictive analytics module
+│   │   ├── services/
+│   │   │   ├── devops_service.py  # Service layer for DevOps automation
+│   │   │   ├── ai_service.py  # AI-powered responses and suggestions
+│   │   ├── models/
+│   │   ├── utils/
+│   ├── tests/
+│   ├── requirements.txt
+│   ├── config.py
+│   ├── .env
+│   
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   │   ├── api.js  # API calls to backend
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── public/
+│   ├── package.json
+│   ├── .env
+│   
+├── infra/
+│   ├── terraform/
+│   │   ├── main.tf  # Infrastructure as Code (IaC) setup
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── deployment/
+│   │   ├── Dockerfile
+│   │   ├── kubernetes.yaml  # Kubernetes deployment
+│   │   ├── azure-functions/  # Serverless setup
+│   
+├── docs/
+│   ├── architecture.md
+│   ├── api-docs.md
+│   ├── sme-training.md
+│   
+└── logs/
+    ├── backend/
+    ├── frontend/
+    ├── deployment/
+```
+
 ## Roadmap
 - [ ] Build basic AI chatbot for Azure DevOps support
 - [ ] Integrate Azure DevOps REST API for pipeline insights
@@ -81,4 +138,3 @@ Contributions are welcome! Please submit a pull request or open an issue for dis
 
 ## Contact
 Email:  mctrinity24@gmail.com
-
