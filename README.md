@@ -22,8 +22,8 @@ This project aims to build an AI-powered **Subject Matter Expert (SME)** for **A
 ## Setup Instructions
 ### 1. Clone the Repository
 ```sh
- git clone https://github.com/your-repo/azure-devops-ai-sme.git
- cd azure-devops-ai-sme
+ git clone https://github.com/mctrinity/ai-sme-ado.git
+ cd ai-sme-ado
 ```
 
 ### 2. Install Dependencies
