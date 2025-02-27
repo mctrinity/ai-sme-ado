@@ -78,3 +78,7 @@ DATABASE_URL=your_database_url
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for discussions.
+
+## Contact
+Email:  mctrinity24@gmail.com
+
