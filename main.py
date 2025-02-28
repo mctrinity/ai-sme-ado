@@ -6,11 +6,13 @@ from fastapi import FastAPI
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/backend")
 
 from app.routes.devops import router as devops_router  # Import DevOps API routes
+from app.routes.chatbot import router as chatbot_router  # ✅ Import Chatbot API
 
 app = FastAPI()
 
-# Register router with correct prefix
-app.include_router(devops_router, prefix="/devops")  # ✅ This is correct
+# Register routers
+app.include_router(devops_router, prefix="/devops")
+app.include_router(chatbot_router, prefix="/chatbot")  # ✅ Register chatbot
 
 @app.get("/")
 def root():

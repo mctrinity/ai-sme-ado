@@ -14,15 +14,15 @@ AZURE_ORG = os.getenv("AZURE_DEVOPS_ORG")
 AZURE_PROJECT = os.getenv("AZURE_DEVOPS_PROJECT")
 AZURE_PAT = os.getenv("AZURE_DEVOPS_PAT")
 
-# Debug
-print(AZURE_ORG)
-print(AZURE_PROJECT)
-print(AZURE_PAT)
+# # Debug
+# print(AZURE_ORG)
+# print(AZURE_PROJECT)
+# print(AZURE_PAT)
 
-# Debugging logs
-print("DEBUG: AZURE_ORG =", os.getenv("AZURE_DEVOPS_ORG"))
-print("DEBUG: AZURE_PROJECT =", os.getenv("AZURE_DEVOPS_PROJECT"))
-print("DEBUG: AZURE_PAT =", os.getenv("AZURE_DEVOPS_PAT"))
+# # Debugging logs
+# print("DEBUG: AZURE_ORG =", os.getenv("AZURE_DEVOPS_ORG"))
+# print("DEBUG: AZURE_PROJECT =", os.getenv("AZURE_DEVOPS_PROJECT"))
+# print("DEBUG: AZURE_PAT =", os.getenv("AZURE_DEVOPS_PAT"))
 
 if not AZURE_ORG or not AZURE_PROJECT or not AZURE_PAT:
     raise ValueError("Missing required environment variables: AZURE_DEVOPS_ORG, AZURE_DEVOPS_PROJECT, or AZURE_DEVOPS_PAT")

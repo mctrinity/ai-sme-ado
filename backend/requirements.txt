@@ -1,6 +1,11 @@
 fastapi
 uvicorn
-httpx
+httpx>=0.24.0
 python-dotenv
 pydantic
 requests
+openai[async-extras]
+langchain
+faiss-cpu
+numpy
+rich
